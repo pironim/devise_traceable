@@ -3,7 +3,6 @@ class DeviseCreate<%= table_name.camelize.singularize %>Tracings < ActiveRecord:
     create_table :<%= table_name.singularize %>_tracings do |t|
       t.integer  :<%= table_name.classify.foreign_key  %>
   t.datetime :sign_in_at
-  t.datetime :sign_out_at
   #Any additional fields here
   #t.timestamps
 end
